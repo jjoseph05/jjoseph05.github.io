@@ -43,10 +43,16 @@ a:hover { text-decoration: underline; }
 header {
   background-color: #f8f8f8;
   /*text-align: center;*/
+  width: 100%;
 }
 
 header h1 {
-  display:inline;
+  display:inline-block;
+  padding: 0 1em;
+}
+
+nav {
+  display: inline-block;
 }
 
 nav ul {
@@ -56,7 +62,8 @@ nav ul {
 }
 
 nav li {
-  display: inline;
+  display:inline;
+  padding: 0 1em;
 }
 
 /* Typography
