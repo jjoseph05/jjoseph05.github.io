@@ -8,11 +8,18 @@
   box-sizing: border-box;
 }
 
-html {
+html, body {
   background-color: #000;
   color: #AAAAAA;
   font-size: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
+
+#bg { position: fixed; left: 0; }
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }
 
 @media (min-width: 40rem) { 
   html { font-size: 112%; }
@@ -42,8 +49,10 @@ a:hover { text-decoration: underline; }
 
 header {
   background-color: #f8f8f8;
-  /*text-align: center;*/
   width: 100%;
+  /*height: 100%;*/
+  display: inline-block;
+  min-width: 720px;
 }
 
 header h1 {
